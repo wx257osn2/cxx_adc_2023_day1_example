@@ -1,0 +1,9 @@
+{
+  "name": "CMake-gtkmm",
+  "version": "0.0.1",
+  "builtin-baseline": "",
+  "dependencies": [
+    "gtkmm",
+    "pkgconf"
+  ]
+}
