@@ -1,7 +1,7 @@
 // CMakeProject-gtkmm.cpp : アプリケーションのエントリ ポイントを定義します。
 //
 
-#include "CMake-gtkmm.h"
+#include "cmake-gtkmm.h"
 namespace CMakeGtkmm {
 	class MyWindow : public Gtk::Window {
 	public:
