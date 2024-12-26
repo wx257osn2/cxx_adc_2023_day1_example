@@ -10,7 +10,6 @@ if (POLICY CMP0141)
 endif()
 
 project ("cmake-gtkmm")
-set(PKG_CONFIG_EXECUTABLE "C:/Users/exli3/vcpkg/downloads/tools/msys2/6f3fa1a12ef85a6f/mingw32/bin/pkg-config.exe")
 
 find_package(PkgConfig)
 

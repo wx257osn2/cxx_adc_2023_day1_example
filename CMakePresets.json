@@ -1,5 +1,4 @@
 {
-
   "configurePresets": [
     {
       "name": "windows-base",
@@ -18,10 +17,6 @@
         "lhs": "${hostSystemName}",
         "rhs": "Windows"
       }
-    },
-    {
-      "name": "default",
-      "inherits": "windows-base"
     }
   ],
 
@@ -30,26 +25,5 @@
     "major": 3,
     "minor": 28,
     "patch": 0
-  },
-  "buildPresets": [
-    {
-      "name": "default",
-      "configurePreset": "default"
-    }
-  ],
-  "workflowPresets": [
-    {
-      "name": "default",
-      "steps": [
-        {
-          "type": "configure",
-          "name": "default"
-        },
-        {
-          "type": "build",
-          "name": "default"
-        }
-      ]
-    }
-  ]
+  }
 }
