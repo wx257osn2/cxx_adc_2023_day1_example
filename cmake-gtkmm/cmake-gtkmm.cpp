@@ -15,9 +15,12 @@ namespace CMakeGtkmm {
 }
 
 
-int main(int argc, char** argv) {
+int WINAPI WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _In_ PSTR lpCmdLine, _In_ int nCmdShow) {
+
+    int argc;
+    LPWSTR* argv = CommandLineToArgvW(GetCommandLineW(), &argc);
 
     auto app = Gtk::Application::create("org.gtkmm.example.base");
-    return app->make_window_and_run<CMakeGtkmm::MyWindow>(argc, argv);
+    return app->make_window_and_run<CMakeGtkmm::MyWindow>(argc, reinterpret_cast<char**>(argv));
 
 }
