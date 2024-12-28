@@ -25,5 +25,9 @@ C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtens
 C:\Program Files\Microsoft Visual Studio\2022\Community>cd C:\
 C:\>git clone https://github.com/wx257osn2/cxx_adc_2023_day1_example gtkmmtes
 C:\>cd gtkmmtes
+C:\gtkmmtes>vcpkg install
+C:\gtkmmtes>cmake --preset default
+C:\gtkmmtes>cmake --build out/build/default
+C:\gtkmmtes>out\build\default\cmake-gtkmm\cmake-gtkmm.exe
 C:\gtkmmtes>
 ```
